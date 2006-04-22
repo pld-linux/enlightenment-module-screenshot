@@ -1,7 +1,3 @@
-#
-# TODO:
-# - add pl
-#
 %define		_module_name	screenshot
 %define		_snap	20060420
 Summary:	Enlightenment DR17 module: %{_module_name}
@@ -25,9 +21,10 @@ Requires:	enlightenmentDR17
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Engage is a rss displayer based on the Enlightenment Foundation
-Libraries. It currently works as an app-launcher, taskbar and a system
-tray.
+A port of the e16 epplet E-Screenshot by Tom Gilbert.
+
+%description -l pl
+Port epletu e16 E-Screenshot napisanego przez Toma Gilberta.
 
 %prep
 %setup -q -n %{_module_name}
